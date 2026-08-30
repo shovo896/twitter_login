@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Tweetly - Log in</title>
+       <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+       <div class="login-page">
+
+              <!-- Left Side: Brand Panel -->
+              <div class="brand-panel">
+                     <div class="brand-logo">Tweetly</div>
+                     <h1 class="brand-tagline">Happening now.</h1>
+                     <p class="brand-sub">Join the conversation today.</p>
+              </div>
+
+              <!-- Right Side: Form Panel -->
+              <div class="form-panel">
+                     <div class="form-card">
+
+                            <div class="form-logo">Tweetly</div>
+                            <h2 class="form-title">Sign in to Tweetly</h2>
+
+                            <form id="loginForm" novalidate>
+
+                                   <div class="input-group">
+                                          <label for="email">Email or username</label>
+                                          <input type="text" id="email" name="email" placeholder="Email or username"
+                                                 autocomplete="username">
+                                          <span class="error-msg" id="emailError"></span>
+                                   </div>
+
+                                   <div class="input-group">
+                                          <label for="password">Password</label>
+                                          <div class="password-wrapper">
+                                                 <input type="password" id="password" name="password"
+                                                        placeholder="Password" autocomplete="current-password">
+                                                 <button type="button" class="toggle-password"
+                                                        id="togglePassword">Show</button>
+                                          </div>
+                                          <span class="error-msg" id="passwordError"></span>
+                                   </div>
+
+                                   <button type="submit" class="btn-signin" id="signinBtn" disabled>Sign in</button>
+
+                            </form>
+
+                            <a href="#" class="link-forgot">Forgot password?</a>
+
+                            <div class="divider">
+                                   <span>or</span>
+                            </div>
+
+                            <div class="signup-prompt">
+                                   Don't have an account?
+                                   <a href="#" class="link-signup">Sign up</a>
+                            </div>
+
+                     </div>
+              </div>
+
+       </div>
+       <script src="login.js"></script>
+</body>
+
+</html>
