@@ -24,5 +24,11 @@ const menu = [
 const shopping_list = menu.flatMap((item) => item.ingredients);
 console.log(shopping_list);
 
+// map 
+const visitorlog = ["rahim", "karim", "rahim", "rahim", "karim", "rahim"];
+const uniqueVisitors = new Set(visitorlog);
+console.log(uniqueVisitors.size);
+console.log(...uniqueVisitors); 
+
 
 
